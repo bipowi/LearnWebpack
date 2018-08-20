@@ -2,6 +2,17 @@ var express = require('express');
 var app = express();
 var path = require('path');
 
+var webpackDevMiddleware = require("webpack-dev-middleware");
+var webpack = require("webpack");
+var webpackConfig = require("./webpack.config");
+var compiler = webpack(webpackConfig);
+
+app.use(webpackDevMiddleware(compiler, {
+  publicPath: webpackConfig.output.publicPath,
+  stats: {colors: true},
+  lazy: true
+}));
+
 app.use(express.static(__dirname));
 
 // view engine setup

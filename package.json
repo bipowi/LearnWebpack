@@ -1,0 +1,20 @@
+{
+  "name": "LearnWebpack",
+  "version": "1.0.0",
+  "description": "Let's learn what is webpack and the basic of it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bipowi/LearnWebpack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bipowi/LearnWebpack/issues"
+  },
+  "homepage": "https://github.com/bipowi/LearnWebpack#readme"
+}

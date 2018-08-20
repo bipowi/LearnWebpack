@@ -9,16 +9,16 @@ module.exports = {
   },
 
   // #2 - Using alias
-  // resolve: {
-  //   alias: {
-  //     Vendor: path.resolve(__dirname, './app/vendor/')
-  //   }
-  // }
+  resolve: {
+    alias: {
+      Vendor: path.resolve(__dirname, './app/vendor/')
+    }
+  },
 
   // #3 - Provide Plugin
-  // plugins: [
-  //   new webpack.ProvidePlugin({
-  //     $: 'jquery'
-  //   })
-  // ]
+  plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery'
+    })
+  ]
 };
